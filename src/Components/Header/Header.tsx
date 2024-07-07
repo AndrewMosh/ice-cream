@@ -13,10 +13,15 @@ const Header = () => {
         <img src={logo} alt="logo" />
         <Menu isBurgerMenuOpen={isBurgerMenuOpen} />
         <Button label="buy now" />
-        <div
+
+        {isBurgerMenuOpen ? <div
           onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
           style={{color:isBurgerMenuOpen ? 'white' : 'black'}}
-          className="header__burger">x</div>
+          className="header__burger">&#10008;</div> : <div
+          onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+          style={{color:isBurgerMenuOpen ? 'white' : 'black'}}
+          className="header__burger">&#9776;</div>}
+        
           
 </div>
 </div>

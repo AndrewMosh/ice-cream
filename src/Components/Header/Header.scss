@@ -11,6 +11,7 @@
     &__burger {
         display: none;
         z-index: 4;
+        font-size: 38px;
         @media (max-width: 840px) {
             display: block;
         }
