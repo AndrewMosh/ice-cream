@@ -1,0 +1,51 @@
+.intro {
+    background-color: rgba(242, 206, 218, 0.3);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    &__inner {
+        &:first-of-type {
+            flex: 0 0 60%;
+        }
+
+        img {
+            max-width: 110%;
+        }
+    }
+
+    &__credo {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 10%;
+        color: rgb(15, 1, 1);
+        padding-bottom: 5px;
+    }
+
+    &__title {
+        font-family: "Fredoka";
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 120.5%;
+        padding-bottom: 25px;
+        max-width: 765px;
+
+        span {
+            color: rgb(210, 49, 102);
+        }
+    }
+
+    &__text {
+        font-family: "Hind";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 523px;
+        padding-bottom: 50px;
+    }
+}

@@ -1,11 +1,16 @@
+import Intro from "./Components/Intro/Intro"
+import Header from "./Components/Header/Header"
+import './App.scss'
 
 function App() {
 
 
   return (
-    <>
-   bitch
-    </>
+    <div className="app">
+            <Header/>
+            <Intro/>
+
+</div>
   )
 }
 
