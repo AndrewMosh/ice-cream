@@ -13,7 +13,7 @@ interface Product {
 
 
 interface Products {
-    icecream: Product[],
+    'ice cream': Product[],
     chocolate: Product[],
     cakebatter: Product[],
     candycane: Product[],
@@ -23,7 +23,7 @@ interface Products {
 }
 
 const PRODUCTS: Products = {
-    icecream: [{
+    'ice cream': [{
         img: brown, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
@@ -40,12 +40,12 @@ const PRODUCTS: Products = {
         oldprice: '$22.55'
     }],
     chocolate: [{
-        img: brown, title: 'Brown bread',
+        img: choco, title: 'Cayenne chocolate',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
     }, {
-        img: choco, title: 'Cayenne chocolate',
+        img: brown, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
@@ -56,7 +56,7 @@ const PRODUCTS: Products = {
         oldprice: '$22.55'
     }],
     cakebatter: [{
-        img: brown, title: 'Brown bread',
+        img: brown, title: 'Sweet corn',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
@@ -66,13 +66,13 @@ const PRODUCTS: Products = {
         price: 19.55,
         oldprice: '$22.55'
     }, {
-        img: corn, title: 'Sweet corn',
+        img: corn, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
     }],
     candycane: [{
-        img: brown, title: 'Brown bread',
+        img: corn, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
@@ -82,18 +82,18 @@ const PRODUCTS: Products = {
         price: 19.55,
         oldprice: '$22.55'
     }, {
-        img: corn, title: 'Sweet corn',
+        img: brown, title: 'Sweet corn',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
     }],
     platters: [{
-        img: brown, title: 'Brown bread',
+        img: brown, title: 'Cayenne chocolate',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
     }, {
-        img: choco, title: 'Cayenne chocolate',
+        img: choco, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
@@ -104,12 +104,12 @@ const PRODUCTS: Products = {
         oldprice: '$22.55'
     }],
     dessert: [{
-        img: brown, title: 'Brown bread',
+        img: choco, title: 'Brown bread',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
     }, {
-        img: choco, title: 'Cayenne chocolate',
+        img: brown, title: 'Cayenne chocolate',
         text: 'Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.',
         price: 19.55,
         oldprice: '$22.55'
