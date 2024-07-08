@@ -6,6 +6,7 @@ import Random from "./Components/Random/Random";
 import Products from "./Components/Products/Products";
 import Download from "./Components/Download/Download";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Products />
             <Download />
             <ContactUs />
+            <Footer />
         </div>
     );
 }
