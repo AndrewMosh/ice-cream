@@ -1,6 +1,6 @@
 import "./Intro.scss";
 import Button from "../../Components/Button/Button";
-import iceCream from "../../assets/illustration.png";
+import iceCream from "../../assets/images/illustration.png";
 const Intro = () => {
     return (
         <div className="intro">

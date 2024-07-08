@@ -1,4 +1,4 @@
-import randomPic from '../assets/random.png'
+import randomPic from '../assets/images/random.png'
 
 interface IceCreams {
     img: string;

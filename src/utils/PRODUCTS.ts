@@ -1,6 +1,6 @@
-import brown from '../assets/brownbread.png'
-import choco from '../assets/choco.png'
-import corn from '../assets/corn.png'
+import brown from '../assets/images/brownbread.png'
+import choco from '../assets/images/choco.png'
+import corn from '../assets/images/corn.png'
 
 interface Product {
     img: string;

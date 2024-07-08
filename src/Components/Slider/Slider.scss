@@ -1,6 +1,5 @@
 .slider {
     max-width: 400px;
-    padding: 16px;
 
     &__header {
         display: flex;
@@ -27,6 +26,7 @@
     &__text {
         margin-left: 20px;
         height: 100px;
+        text-align: left;
     }
 
     &__quote {
@@ -40,6 +40,7 @@
         bottom: 0;
         padding-left: 10px;
     }
+
     &__images {
         display: flex;
         gap: 27px;

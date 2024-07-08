@@ -2,7 +2,7 @@ import PRODUCTS from "../../utils/PRODUCTS";
 import { useState } from "react";
 import Button from "../Button/Button";
 import "./Products.scss";
-
+import Testimonials from "../Testimonials/Testimonials";
 const Products = () => {
     const [tab, setTab] = useState(PRODUCTS["ice cream"]);
     const [active, setActive] = useState("ice cream");
@@ -44,6 +44,7 @@ const Products = () => {
                             </div>
                         ))}
                     </div>
+                    <Testimonials />
                 </div>
             </div>
         </section>

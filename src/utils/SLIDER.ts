@@ -1,5 +1,5 @@
-import girl from '../assets/girl.png'
-import boy from '../assets/boy.png'
+import girl from '../assets/images/girl.png'
+import boy from '../assets/images/boy.png'
 
 interface Slider {
     id: number;
