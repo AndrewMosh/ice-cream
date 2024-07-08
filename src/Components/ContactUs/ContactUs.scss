@@ -1,0 +1,39 @@
+.contact {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 52px;
+        text-align: center;
+        padding-bottom: 28px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 515px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__input {
+        border: none;
+        background-color: rgb(250, 250, 250);
+        padding: 15px 30px;
+        width: 600px;
+        max-width: 300px;
+        min-width: 200px;
+        @media (max-width: 515px) {
+            width: 100%;
+        }
+    }
+}
