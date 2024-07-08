@@ -30,10 +30,10 @@ const Products = () => {
                     <div className="products__all">
                         {tab.map((el, index) => (
                             <div className="products__content" key={el.title}>
-                                <div className={index === 1 ? "products__image right" : "products__image"}>
+                                <div className={index === 1 ? "products__image right-image" : "products__image"}>
                                     <img src={el.img} alt={el.title} />
                                 </div>
-                                <div className="products__info">
+                                <div className={index === 1 ? "products__info right-text" : "products__info"}>
                                     <div className="products__title">{el.title}</div>
                                     <p className="products__text">{el.text}</p>
                                     <div className="products__price">

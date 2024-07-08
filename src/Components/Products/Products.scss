@@ -63,7 +63,7 @@
 
     &__text {
         padding-bottom: 28px;
-        max-width: 454px;
+        // max-width: 454px;
     }
 
     &__price {
@@ -101,11 +101,18 @@
 
 .active {
     border-bottom: 3px solid rgb(214, 67, 116);
+    text-align: right;
 }
 
-.right {
+.right-image {
     order: 1;
     @media (max-width: 664px) {
         order: 0;
+    }
+}
+.right-text {
+    text-align: right;
+    @media (max-width: 664px) {
+        text-align: left;
     }
 }

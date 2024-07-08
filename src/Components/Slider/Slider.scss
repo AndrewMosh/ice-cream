@@ -1,0 +1,70 @@
+.slider {
+    max-width: 400px;
+    padding: 16px;
+
+    &__header {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding-bottom: 45px;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        padding-bottom: 5px;
+    }
+
+    &__company {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        margin-left: 20px;
+        height: 100px;
+    }
+
+    &__quote {
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+
+    &__unquote {
+        position: absolute;
+        bottom: 0;
+        padding-left: 10px;
+    }
+    &__images {
+        display: flex;
+        gap: 27px;
+        align-items: center;
+        padding-top: 56px;
+
+        @media (max-width: 439px) {
+            justify-content: center;
+        }
+    }
+
+    &__next,
+    &__prev {
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+
+.activePic {
+    width: 57px;
+    height: 57px;
+    border: 1px solid rgb(214, 67, 116);
+}

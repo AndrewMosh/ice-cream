@@ -4,6 +4,7 @@ import "./App.scss";
 import Advantages from "./Components/Advantages/Advantages";
 import Random from "./Components/Random/Random";
 import Products from "./Components/Products/Products";
+import Slider from "./Components/Slider/Slider";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Advantages />
             <Random />
             <Products />
+            <Slider />
         </div>
     );
 }
