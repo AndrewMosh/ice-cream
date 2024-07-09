@@ -1,23 +1,17 @@
-import Intro from "./Components/Intro/Intro";
-import Header from "./Components/Header/Header";
 import "./App.scss";
-import Advantages from "./Components/Advantages/Advantages";
-import Random from "./Components/Random/Random";
-import Products from "./Components/Products/Products";
-import Download from "./Components/Download/Download";
-import ContactUs from "./Components/ContactUs/ContactUs";
+import allComponents from "./utils/COMPONENTS";
+import Header from "./Components/Header/Header";
+import Intro from "./Components/Intro/Intro";
 import Footer from "./Components/Footer/Footer";
-
+import { Fragment } from "react/jsx-runtime";
 function App() {
     return (
         <div className="app">
             <Header />
             <Intro />
-            <Advantages />
-            <Random />
-            <Products />
-            <Download />
-            <ContactUs />
+            {allComponents.map((component, index) => (
+                <Fragment key={index}>{component}</Fragment>
+            ))}
             <Footer />
         </div>
     );

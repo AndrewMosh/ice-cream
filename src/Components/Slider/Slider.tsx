@@ -28,13 +28,13 @@ const Slider = () => {
                             <div className="slider__company">{SLIDER[currentIndex].company}</div>
                         </div>
                     </div>
-                    <p className="slider__text">
+                    <div className="slider__text">
                         <div style={{ position: "relative" }}>
                             <img className="slider__quote" src={quote} alt="quote" />
                             {SLIDER[currentIndex].text}
                             <img className="slider__unquote" src={unquote} alt="unquote" />
                         </div>
-                    </p>
+                    </div>
                 </div>
                 <div className="slider__images">
                     <div className="slider__prev" onClick={handlePrev}>

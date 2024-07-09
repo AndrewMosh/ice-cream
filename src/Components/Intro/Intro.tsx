@@ -1,5 +1,5 @@
 import "./Intro.scss";
-import Button from "../../Components/Button/Button";
+import Button from "../Button/Button";
 import iceCream from "../../assets/images/illustration.png";
 const Intro = () => {
     return (
