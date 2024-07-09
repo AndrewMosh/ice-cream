@@ -3,9 +3,18 @@ import Menu from "../Menu/Menu";
 import Button from "../Button/Button";
 import "./Header.scss";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Header = () => {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (isBurgerMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [isBurgerMenuOpen]);
     return (
         <header className="header">
             <div className="header__container container">
