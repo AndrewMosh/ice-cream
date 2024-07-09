@@ -13,6 +13,11 @@
     src: url("./assets/fonts/HindMadurai-Regular.ttf");
 }
 
+a,
+button {
+    transition: 0.2s ease-in-out;
+}
+
 li {
     list-style: none;
 }
