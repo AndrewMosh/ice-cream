@@ -17,15 +17,6 @@
         border-radius: 7px;
         cursor: pointer;
         text-align: center;
-        flex: 1 1 22%;
-
-        @media (max-width: 781px) {
-            flex: 1 1 38%;
-        }
-
-        @media (max-width: 608px) {
-            flex: 1 1 50%;
-        }
 
         &:hover {
             box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.03);
@@ -50,5 +41,17 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
+    }
+
+    &__animation {
+        flex: 1 1 18%;
+
+        @media (max-width: 1064px) {
+            flex: 1 1 38%;
+        }
+
+        @media (max-width: 608px) {
+            flex: 1 1 50%;
+        }
     }
 }

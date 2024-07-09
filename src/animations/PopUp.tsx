@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 
 const cardVariantsRight: Variants = {
     offscreen: {
-        x: 100,
+        x: 40,
         opacity: 0,
     },
     onscreen: {
@@ -19,7 +19,7 @@ const cardVariantsRight: Variants = {
 
 const cardVariantsLeft: Variants = {
     offscreen: {
-        x: -100,
+        x: -40,
         opacity: 0,
     },
     onscreen: {
