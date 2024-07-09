@@ -4,11 +4,11 @@ import PopUp from "../../animations/PopUp";
 
 const Advantages = () => {
     return (
-        <section className="advantages" id="advantages">
-            <div className="advantages__container container">
-                <PopUp
-                    side="right"
-                    element={
+        <PopUp
+            side="right"
+            element={
+                <section className="advantages" id="advantages">
+                    <div className="advantages__container container">
                         <div className="advantages__wrapper">
                             {PLUSES.map((plus) => (
                                 <div key={plus.id} className="advantages__inner">
@@ -18,10 +18,10 @@ const Advantages = () => {
                                 </div>
                             ))}
                         </div>
-                    }
-                />
-            </div>
-        </section>
+                    </div>
+                </section>
+            }
+        />
     );
 };
 
