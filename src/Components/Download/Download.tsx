@@ -5,7 +5,6 @@ import add from "../../assets/svg/add.svg";
 import order from "../../assets/svg/order.svg";
 import google from "../../assets/svg/google.svg";
 import apple from "../../assets/svg/apple.svg";
-import PopUp from "../../animations/PopUp";
 
 const Download = () => {
     return (
