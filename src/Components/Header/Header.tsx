@@ -17,16 +17,15 @@ const Header = () => {
                     {isBurgerMenuOpen ? (
                         <div
                             onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
-                            style={{ color: isBurgerMenuOpen ? "white" : "black" }}
-                            className="header__burger"
+                            className={isBurgerMenuOpen ? "header__burger header__burger--white" : "header__burger header__burger--black"}
                         >
                             &#10008;
                         </div>
                     ) : (
                         <div
                             onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
-                            style={{ color: isBurgerMenuOpen ? "white" : "black" }}
-                            className="header__burger"
+                            // style={{ color: isBurgerMenuOpen ? "white" : "black" }}
+                            className={isBurgerMenuOpen ? "header__burger header__burger--white" : "header__burger header__burger--black"}
                         >
                             &#9776;
                         </div>

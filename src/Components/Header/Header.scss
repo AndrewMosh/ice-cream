@@ -12,8 +12,22 @@
         display: none;
         z-index: 4;
         font-size: 38px;
+        cursor: pointer;
+        transition: 0.2s;
+
         @media (max-width: 840px) {
             display: block;
+        }
+
+        &:hover {
+            color: rgb(210, 49, 102);
+        }
+
+        &--black {
+            color: black;
+        }
+        &--white {
+            color: white;
         }
     }
 

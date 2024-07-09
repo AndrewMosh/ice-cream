@@ -8,7 +8,7 @@ type MenuProps = {
 
 const Menu = ({ isBurgerMenuOpen }: MenuProps) => {
     return (
-        <nav className={isBurgerMenuOpen ? "menu show" : "menu"}>
+        <nav className={isBurgerMenuOpen ? "menu show fade" : "menu fade"}>
             <ul className="menu__list">
                 {MENU.map((el) => (
                     <li className="menu__item" key={el.name}>
