@@ -5,22 +5,26 @@ import unquote from "../../assets/svg/unquote.svg";
 import next from "../../assets/svg/next.svg";
 import prev from "../../assets/svg/prev.svg";
 import { useState } from "react";
+import useAnimation from "../../animations/Fade";
 
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAnimating, startAnimation] = useAnimation();
 
     const handlePrev = () => {
+        startAnimation();
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? SLIDER.length - 1 : prevIndex - 1));
     };
 
     const handleNext = () => {
+        startAnimation();
         setCurrentIndex((prevIndex) => (prevIndex === SLIDER.length - 1 ? 0 : prevIndex + 1));
     };
 
     return (
         <div className="slider">
             <div className="slider__wrapper">
-                <div className="slider__full">
+                <div className={`slider__full ${isAnimating ? "fade" : "slider__full"}`}>
                     <div className="slider__header">
                         <img src={SLIDER[currentIndex].img} alt={SLIDER[currentIndex].name} />
                         <div className="slider__name-container">
@@ -37,9 +41,10 @@ const Slider = () => {
                     </div>
                 </div>
                 <div className="slider__images">
-                    <div className="slider__prev" onClick={handlePrev}>
+                    <button className="slider__prev" onClick={handlePrev}>
                         <img src={prev} alt="prev" />
-                    </div>
+                    </button>
+
                     {[
                         SLIDER[currentIndex - 1] || SLIDER[SLIDER.length - 1],
                         SLIDER[currentIndex],
@@ -52,9 +57,10 @@ const Slider = () => {
                             className={`slider__image ${index === 1 ? "activePic" : ""}`}
                         />
                     ))}
-                    <div className="slider__next" onClick={handleNext}>
+
+                    <button className="slider__next" onClick={handleNext}>
                         <img src={next} alt="next" />
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>

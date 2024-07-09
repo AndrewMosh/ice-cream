@@ -58,7 +58,13 @@
 
     &__next,
     &__prev {
+        background: none;
+        border: none;
         cursor: pointer;
+
+        &:hover {
+            scale: (1.1);
+        }
     }
 
     &__image {

@@ -30,14 +30,23 @@
     }
 
     &__input {
-        border: none;
         background-color: rgb(250, 250, 250);
         padding: 14.5px 30px;
         width: 100%;
         max-width: 200px;
         min-width: 100px;
-        outline-color: rgb(214, 67, 116);
+        outline: none; /* Убираем стандартный outline */
+        transition: border 0.3s ease-in-out; /* Задаем transition для box-shadow */
         border-radius: 5px 0 0 5px;
+        border: none;
+        box-sizing: border-box;
+
+        &:focus {
+            border: 1px solid rgb(210, 49, 102);
+        }
+        &::placeholder {
+            transition: 0.2s ease-in-out;
+        }
 
         @media (max-width: 515px) {
             border-radius: 5px;

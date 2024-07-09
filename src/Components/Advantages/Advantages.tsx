@@ -8,11 +8,11 @@ const Advantages = () => {
             <div className="advantages__container container">
                 <div className="advantages__wrapper">
                     {PLUSES.map((plus) => (
-                        <div className="advantages__animation">
+                        <div key={plus.id} className="advantages__animation">
                             <PopUp
                                 side="right"
                                 element={
-                                    <div key={plus.id} className="advantages__inner">
+                                    <div className="advantages__inner">
                                         <img className="advantages__image" src={plus.img} alt={plus.title} />
                                         <div className="advantages__title">{plus.title}</div>
                                         <p className="advantages__text">{plus.text}</p>

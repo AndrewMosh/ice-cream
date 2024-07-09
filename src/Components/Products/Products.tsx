@@ -3,9 +3,12 @@ import { useState } from "react";
 import Button from "../Button/Button";
 import "./Products.scss";
 import Testimonials from "../Testimonials/Testimonials";
+import useAnimation from "../../animations/Fade";
+
 const Products = () => {
     const [tab, setTab] = useState(PRODUCTS["ice cream"]);
     const [active, setActive] = useState("ice cream");
+    const [isAnimating, startAnimation] = useAnimation();
 
     return (
         <section className="products">
@@ -17,6 +20,7 @@ const Products = () => {
                             <li
                                 className={el == active ? "products__tab active" : "products__tab"}
                                 onClick={() => {
+                                    startAnimation();
                                     setTab(PRODUCTS[el as keyof typeof PRODUCTS]);
                                     setActive(el as keyof typeof PRODUCTS);
                                 }}
@@ -27,7 +31,7 @@ const Products = () => {
                         ))}
                     </ul>
 
-                    <div className="products__all">
+                    <div className={`products__all ${isAnimating ? "fade" : "products__all"}`}>
                         {tab.map((el, index) => (
                             <div className="products__content" key={el.title}>
                                 <div className={index === 1 ? "products__image right-image" : "products__image"}>
