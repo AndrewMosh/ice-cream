@@ -1,11 +1,28 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "compilerOptions": {
+        "target": "esnext",
+        "jsx": "react-jsx",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "module": "node16",
+        "moduleResolution": "node16",
+        "types": [
+            "@testing-library/jest-dom"
+        ],
+        "strict": true,
+        "declaration": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
     },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "./vitest.setup.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

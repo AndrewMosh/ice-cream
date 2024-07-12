@@ -1,12 +1,12 @@
 import logo from "../../assets/svg/logo.svg";
 import "./Footer.scss";
-import DOCS from "../../utils/DOCS";
-import MENU from "../../utils/MENU";
+import DOCS from "../../utils/DOCS.js";
+import MENU from "../../utils/MENU.js";
 import fb from "../../assets/svg/facebook.svg";
 import insta from "../../assets/svg/instagram.svg";
 import twitter from "../../assets/svg/twitter.svg";
 import li from "../../assets/svg/linkedin.svg";
-import Button from "../Button/Button";
+import Button from "../Button/Button.js";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

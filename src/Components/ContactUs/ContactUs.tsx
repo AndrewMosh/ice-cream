@@ -1,7 +1,7 @@
 import "./ContactUs.scss";
-import Button from "../Button/Button";
+import Button from "../Button/Button.js";
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
     return (
         <section className="contact">
             <div className="contact__container container">
